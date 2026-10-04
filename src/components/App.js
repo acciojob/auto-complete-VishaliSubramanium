@@ -1,11 +1,14 @@
 
 import React from "react";
 import './../styles/App.css';
+import Autocomplete from "./Autocomplete";
+
+const suggestions = ["apple", "banana", "cherry", "date", "elderberry", "fig"];
 
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+      <Autocomplete suggestions={suggestions}/>
     </div>
   )
 }
